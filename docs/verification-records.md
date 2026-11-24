@@ -1,7 +1,5 @@
 # Source preservation verification records
 
-**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
-
 These records preserve the exact commits and scopes of completed checks. See the [current coverage overview](source-and-license-status.md) for outstanding source, access, licensing and recovery work.
 
 ## Verified captures
