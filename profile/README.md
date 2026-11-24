@@ -10,21 +10,7 @@ CRAYS brings together personal tools, community membership and the software need
 
 CRAYS connects application APIs, including GraphQL, to **Core/BCC identity, accounts, permissions and business rules**, then to independently operated services.
 
-~~~mermaid
-flowchart TD
-    UI["Web / mobile: Pro · Personal<br/>Member / Club · Work / SaaS"] --> API["CRAYS application APIs / GraphQL"]
-    API --> Core["Core / BCC: identity, accounts,<br/>permissions and business rules"]
-    Core --> Adapters["CRAYS BFFs and service adapters"]
-    Adapters --> Services["Independent service APIs and runtimes"]
-    Services --> Business["Plane · Vendure · Frappe / ERPNext · Qlo"]
-    Services --> Collaboration["Nextcloud · Postiz"]
-    Services --> Chuck["Chuck: personal intelligence"]
-    Chuck -. "documented component relationship" .-> OpenClaw["OpenClaw agent components"]
-    Core --> RDS["Core data: RDS PostgreSQL"]
-    Services --> Data["Service-owned databases and file storage"]
-    classDef crays fill:#fff1f2,stroke:#b42335,color:#202124;
-    class API,Core,Adapters crays;
-~~~
+[View the architecture diagram](https://github.com/CraysWorld/.github/blob/main/docs/architecture-overview.md)
 
 In plain terms: the application asks for an operation; Core/BCC establishes its account and business authority; an adapter calls the responsible service. A **backend-for-frontend (BFF)** shapes application-specific requests and responses. It is distinct from Core/BCC and does not replace provider permissions.
 
