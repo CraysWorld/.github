@@ -1,7 +1,5 @@
 # CRAYS
 
-**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
-
 ### Build the software connecting people, places and everyday operations.
 
 CRAYS brings together personal tools, community membership and the software needed to run clubs, hospitality and business projects. We build the web experiences, native interfaces and integrations that connect those worlds: a member's account, a guest's view of a property, an operator's project work, or the accounting consequence of a commerce event.
@@ -10,7 +8,7 @@ CRAYS brings together personal tools, community membership and the software need
 
 ## Architecture: applications, Core/BCC and independent services
 
-**Current AWS operating model · updated 24 November 2026.** CRAYS connects application APIs, including GraphQL, to **Core/BCC identity, accounts, permissions and business rules**, then to independently operated services.
+CRAYS connects application APIs, including GraphQL, to **Core/BCC identity, accounts, permissions and business rules**, then to independently operated services.
 
 ~~~mermaid
 flowchart TD
@@ -32,7 +30,7 @@ In plain terms: the application asks for an operation; Core/BCC establishes its 
 
 **GraphQL is an application interface; not every provider uses GraphQL.** Plane handles projects, Vendure commerce, Frappe/ERPNext business and finance, Qlo hospitality, Nextcloud files/collaboration and Postiz publishing. Chuck has separate consumer, agent and workflow boundaries; OpenClaw supplies documented agent components rather than being the same product. Twenty is [archived and no longer used](https://github.com/CraysWorld/.github/blob/main/docs/legacy-projects.md); any CRM reintroduction would be a separately qualified plan.
 
-The storage direction replaces **Neon PostgreSQL with Amazon RDS PostgreSQL** for Core data, while services retain appropriate PostgreSQL or MySQL/MariaDB databases. S3 adds object/file storage alongside provider-specific file services. These are architectural responsibilities, **not proof that every connection or end-to-end workflow is implemented or live**.
+Core data uses **Amazon RDS PostgreSQL**, while services retain appropriate PostgreSQL or MySQL/MariaDB databases. S3 adds object/file storage alongside provider-specific file services. These are architectural responsibilities, **not proof that every connection or end-to-end workflow is implemented or live**.
 
 [Visual architecture guide](https://github.com/CraysWorld/crays-platform/blob/main/docs/architecture.md) · [Member GraphQL source](https://github.com/CraysWorld/crays-platform/blob/main/services/member-club/source50/README.md) · [BFF source and contracts](https://github.com/CraysWorld/crays-platform/blob/main/services/clubs-commerce-bff/README.md) · [Service catalog](https://github.com/CraysWorld/crays-platform/blob/main/docs/services/README.md)
 
