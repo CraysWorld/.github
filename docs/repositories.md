@@ -1,7 +1,5 @@
 # Repository guide
 
-**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
-
 CRAYS develops software connecting members, guests and venue operators: personal experiences, membership, commerce and business operations. This guide helps you choose the repository for the experience or integration you want to improve.
 
 **[Understand the architecture](https://github.com/CraysWorld/crays-platform/blob/main/docs/architecture.md) · [Explore service integrations](https://github.com/CraysWorld/crays-platform/blob/main/docs/services/README.md) · [Try a first local test](https://github.com/CraysWorld/crays-platform/blob/main/docs/services/qlo.md#first-local-check-the-two-projection-tests) · [Contribute](https://github.com/CraysWorld/crays-platform/blob/main/CONTRIBUTING.md)**
