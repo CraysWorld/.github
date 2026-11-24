@@ -1,7 +1,5 @@
 # Source, license and recovery status
 
-**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
-
 **Consolidation is in progress. GitHub does not yet contain the complete current CRAYS source and recovery set.** Public access, source preservation, reproducible builds and license clearance are checked separately.
 
 Start with the [repository guide](repositories.md) and [structure rules](repository-structure.md). Detailed commit links and byte-verification records are in [verification records](verification-records.md).
