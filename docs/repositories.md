@@ -1,17 +1,20 @@
 # Repository guide
 
+**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
+
 CRAYS develops software connecting members, guests and venue operators: personal experiences, membership, commerce and business operations. This guide helps you choose the repository for the experience or integration you want to improve.
 
 **[Understand the architecture](https://github.com/CraysWorld/crays-platform/blob/main/docs/architecture.md) · [Explore service integrations](https://github.com/CraysWorld/crays-platform/blob/main/docs/services/README.md) · [Try a first local test](https://github.com/CraysWorld/crays-platform/blob/main/docs/services/qlo.md#first-local-check-the-two-projection-tests) · [Contribute](https://github.com/CraysWorld/crays-platform/blob/main/CONTRIBUTING.md)**
 
 Project repositories, shared implementations and retained upstream forks have different roles. Their detailed source/version records remain linked below.
 
-The organization currently contains **25 repositories: 19 public and 6 private**. Private repository links require authorized access and may return 404 to other readers.
+The organization currently contains **26 repositories: 19 public and 7 private** (checked 24 November 2026). Private repository links require authorized access and may return 404 to other readers.
 
 ## Shared application and platform services
 
 | Repository | Source role | Version guidance |
 | --- | --- | --- |
+| [crays-web](https://github.com/CraysWorld/crays-web) — **private** | Current shared web release assembly, source selection and AWS Amplify preview packaging. | Default `main` is navigation; use the `preview` branch and its exact release inputs. A branch tip is not proof of a successful deployment. |
 | [crays-platform](https://github.com/CraysWorld/crays-platform) | Shared Next.js application under apps/web, Personal React/Vite application under apps/personal, Qlo gateway and Clubs Commerce BFF under services, hosting wrappers, and reviewed migration operations. | Exact application baseline/prepared-state tags and separate service/version records. Later source overlays, recovery inputs and full license closure remain in progress. |
 | [crays-openclaw](https://github.com/CraysWorld/crays-openclaw) — **private** | DEV integration repository for four owner capsules: Web runtime, Web UI, Nostr transport and Personal Intelligence. | Source handoff capsules, not an upstream OpenClaw fork or a qualified standalone build root. Repository access does not establish a public source or license release; see each capsule’s source and recovery boundaries. |
 
@@ -87,6 +90,6 @@ The [eleven-website map](repository-structure.md#eleven-website-compositions) co
 3. Follow the exact commit and any required upstream/base-component references. Include later source changes and hosting wrappers; an old HEAD or upstream link alone is insufficient.
 4. Read the project's original license texts, NOTICE files, modification notes and source-availability record.
 
-Source and documentation imports are continuing until the AWS migration owner reports completion and the final GitHub reconciliation passes. The [status page](source-and-license-status.md) records established milestones and remaining gaps.
+AWS is the current operating environment; the move to AWS is no longer described as pending. Source preservation, repository synchronisation and product acceptance are separate checks. The [status page](source-and-license-status.md) records established milestones and remaining gaps.
 
 See the [repository structure and update rules](https://github.com/CraysWorld/.github/blob/main/docs/repository-structure.md) for where current sources, shared components, operations and historical versions belong.

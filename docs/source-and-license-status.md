@@ -1,5 +1,7 @@
 # Source, license and recovery status
 
+**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
+
 **Consolidation is in progress. GitHub does not yet contain the complete current CRAYS source and recovery set.** Public access, source preservation, reproducible builds and license clearance are checked separately.
 
 Start with the [repository guide](repositories.md) and [structure rules](repository-structure.md). Detailed commit links and byte-verification records are in [verification records](verification-records.md).
@@ -407,7 +409,7 @@ All seventeen selected Spot/WebChuck working-source originals (3,729,870 bytes) 
 
 The required sequence remains: authorized development → complete GitHub source → authorized build and protected preview → exact source/artifact/license checks → concrete product-release approval → publication with a rollback version. See the [full release sequence](verification-records.md#required-release-sequence).
 
-This assignment remains active throughout the server migration. Final completion requires the AWS owner's actual completion signal and a full reconciliation of the resulting sources, versions, documentation, access and license evidence.
+The server move to AWS is complete according to the current operating decision. The source-preservation work described here remains distinct: completion requires reconciliation of the selected sources, versions, documentation, access and original notices. Historical counts below are not a fresh audit of every current runtime.
 
 The exact two Personal AWS Build02 configuration bodies and six original Python programs are now preserved under apps/personal/aws-build02 and operations/personal-build. The current configuration hashes match the existing Build02 entry. Eight original code files and four generated food image bodies were anonymously read back; together with 1,510 unchanged earlier source files, all 1,535 selected public file comparisons passed. Both complete input views still reconstruct with all 2,975 original comparisons passing. This closes these particular source gaps, while full build environments, later source and runtime adoption remain open.
 

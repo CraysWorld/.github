@@ -1,5 +1,7 @@
 # CRAYS
 
+**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
+
 ### Build the software connecting people, places and everyday operations.
 
 CRAYS brings together personal tools, community membership and the software needed to run clubs, hospitality and business projects. We build the web experiences, native interfaces and integrations that connect those worlds: a member's account, a guest's view of a property, an operator's project work, or the accounting consequence of a commerce event.
@@ -8,7 +10,7 @@ CRAYS brings together personal tools, community membership and the software need
 
 ## Architecture: applications, Core/BCC and independent services
 
-**Target architecture · AWS integration in progress.** CRAYS connects application APIs, including GraphQL, to **Core/BCC identity, accounts, permissions and business rules**, then to independently operated services.
+**Current AWS operating model · updated 24 November 2026.** CRAYS connects application APIs, including GraphQL, to **Core/BCC identity, accounts, permissions and business rules**, then to independently operated services.
 
 ~~~mermaid
 flowchart TD

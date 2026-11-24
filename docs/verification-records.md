@@ -1,5 +1,7 @@
 # Source preservation verification records
 
+**Current operating environment — 24 November 2026:** CRAYS development, builds, testing, previews and server operation use AWS. Vercel, Neon and XXL references in older captures describe historical environments. This hosting status does not claim completion of every product flow. [Current AWS and source guidance](https://github.com/CraysWorld/.github/blob/main/docs/aws-operating-status.md).
+
 These records preserve the exact commits and scopes of completed checks. See the [current coverage overview](source-and-license-status.md) for outstanding source, access, licensing and recovery work.
 
 ## Verified captures
@@ -27,7 +29,7 @@ These records preserve the exact commits and scopes of completed checks. See the
 
 ## Required release sequence
 
-1. Authorized development on a fresh XXL environment.
+1. Authorized development on the existing designated AWS development environment.
 2. Complete source and documentation committed to Git/GitHub under CraysWorld.
 3. Deploy-trigger inspection before push; isolated source branches where needed.
 4. Authorized AWS/Amplify build and protected preview.
@@ -35,7 +37,7 @@ These records preserve the exact commits and scopes of completed checks. See the
 6. Concrete user approval for the product release.
 7. Publication through the responsible deployment owner, with an identified rollback version.
 
-The GitHub consolidation remains active throughout the server migration. Final acceptance requires the AWS owner's actual completion signal and an independent final reconciliation of the resulting sources and documentation. No legal-compliance claim is based solely on a public repository, package license field, build, screenshot or image pin.
+AWS operation is current. Historical migration and source-capture results below retain their original dates and scope; source completeness still requires independent reconciliation against the selected release. No legal-compliance claim is based solely on a public repository, package license field, build, screenshot or image pin.
 
 
 ## Shared Next.js source capture — 9 November 2026
